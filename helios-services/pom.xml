@@ -258,7 +258,7 @@
         <dependency>
             <groupId>net.logstash.logback</groupId>
             <artifactId>logstash-logback-encoder</artifactId>
-            <version>4.5.1</version>
+            <version>6.3</version>
         </dependency>
         <dependency>
             <groupId>eu.toolchain.ffwd</groupId>
@@ -409,8 +409,7 @@
                     </filters>
                     <transformers>
                         <!--The ServicesResourceTransformer is needed to make jersey happy-->
-                        <transformer
-                                implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                     </transformers>
                 </configuration>
             </plugin>
